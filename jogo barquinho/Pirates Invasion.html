@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Pirates Invasion</title>
+    <script src="./Pirates Invasion_files/p5.js"></script>
+    <script src="./Pirates Invasion_files/p5.sound.min.js"></script>
+    <script src="./Pirates Invasion_files/p5.dom.min.js"></script>
+    <script src="./Pirates Invasion_files/p5.gif.min.js"></script>
+    <script src="./Pirates Invasion_files/matter.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Pirates Invasion_files/style.css">
+
+    <script src="./Pirates Invasion_files/Cannon.js"></script>
+    <script src="./Pirates Invasion_files/CannonBall.js"></script>
+    <script src="./Pirates Invasion_files/Boat.js"></script>
+    
+  </head>
+  <body>
+    <script src="./Pirates Invasion_files/sketch.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<span id="savee_button" style="background: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNyAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgOS40ODQzOFY2Ljg1OTM4SDYuODEyNVYwSDkuNDg0MzhWNi44NTkzOEgxNi4yOTY5VjkuNDg0MzhIOS40ODQzOFYxNi4zMjgxSDYuODEyNVY5LjQ4NDM4SDBaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K&quot;) 8px 6px / 14px 14px no-repeat rgb(0, 0, 0) !important; border: none !important; border-radius: 5px !important; color: rgb(255, 255, 255) !important; cursor: pointer !important; display: none !important; font: 700 11px / 25px &quot;Helvetica Neue&quot;, Helvetica, Arial !important; max-height: 25px !important; max-width: 70px !important; min-height: 25px !important; min-width: 70px !important; margin: 0px !important; opacity: 0 !important; padding: 0px !important; position: absolute !important; text-align: center !important; text-transform: none !important; text-indent: 20px !important; transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s !important; z-index: 2147483647 !important; -webkit-font-smoothing: antialiased !important;">SAVEE</span><canvas id="defaultCanvas0" class="p5Canvas" width="3600" height="1800" style="width: 1200px; height: 600px;"></canvas></body></html>

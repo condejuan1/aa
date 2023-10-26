@@ -11,7 +11,7 @@ class CannonBall {
     shoot() {
         var novoAngulo = cannon.angle - 28
         var velocity = p5.Vector.fromAngle(radians(novoAngulo)); 
-        velocity.mult(10); 
+        velocity.mult(20); 
         Matter.Body.setStatic(this.body, false);
          Matter.Body.setVelocity(this.body, { x: velocity.x, y: velocity.y });
     }
@@ -23,4 +23,11 @@ class CannonBall {
         image(this.image, pos.x, pos.y, this.r, this.r);
         pop();
     }
+    remove(index){
+        setTimeout(()=>{
+          Matter.World.remove(world,boats[index].body)
+          delete boats[index]
+        },2000)
+      }
+      
 }
